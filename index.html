@@ -4,157 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        /* Section Styling */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        ul li strong {
+            color: #4CAF50;
+            font-size: 1.2em;
+        }
+
+        hr {
+            border: 1px solid #eee;
+            margin: 40px 0;
+        }
+
+        /* Skills Section Styling */
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills li {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        /* Publications Section Styling */
+        em {
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Arturo Trelles</h1>
-    <img src="foto.png" alt="My pic" width="150px">
+    <div class="container">
+        <h1>Arturo Trelles</h1>
+        <img src="foto.png" alt="My pic" width="150px">
 
-    <h2>Summary</h2>
-    <p>
-        I am a Data Scientist with experience in research and programming,  
-        high computer performance algorithms.
-    </p>
+        <h2>Summary</h2>
+        <p>
+            Web developer with a strong technical background in programming, data analysis, and computational optimization. Experienced with languages like Python, JavaScript, C, and Fortran. Currently focused on backend development using Node.js, Express, and SQL databases. Passionate about building efficient, scalable, and well-structured software solutions.
+        </p>
 
-    <hr/>
+        <hr/>
 
-    <h2>My Education</h2>
-    <ul>
-        <li>
-            <strong>Degree in Physics:</strong>  
-            <br> 2011-2016 Bachelor's Degree, Facultad de Ciencias, UNAM  
-            <br> Thesis: Stellar orbital dynamics in galaxies with peculiar bars.  
-            <br> Advisor: Dra. Bárbara Pichardo.
-        </li>
+        <h2>My Education</h2>
+        <ul>
+            <li>
+                <strong>Ph.D. in Astrophysics:</strong>
+                <br>2019-2024, Instituto de Astronomía, UNAM
+                <br>Thesis: The Milky Way's halo: Collective effects in its dynamics and detecting substructure through the stellar halo.
+                <br>Advisors: Dr. Octavio Valenzuela, Dr. Santi Roca-Fàbrega.
+            </li>
 
-        <br>
+            <li>
+                <strong>M.S. in Astrophysics:</strong>
+                <br>2016-2018, Instituto de Astronomía, UNAM
+                <br>Thesis: Dynamical Friction in Inhomogeneous Systems with Multiple Perturbers.
+                <br>Advisor: Dr. Octavio Valenzuela.
+                <br><strong>Achievements:</strong>
+                <ul>
+                    <li>Conducted N-body simulations of dynamical friction in Milky Way-like galaxies.</li>
+                    <li>Analyzed the impact of multiple infalling systems on the structure of the stellar halo of the Milky Way.</li>
+                </ul>
+            </li>
 
-        <li>
-            <strong>M.S. in Astrophysics:</strong>  
-            <br> 2016-2018, Instituto de Astronomía, UNAM  
-            <br> Thesis: Dynamical Friction in Inhomogeneous Systems with Multiple Perturbers.  
-            <br> Advisor: Dr. Octavio Valenzuela.  
+            <li>
+                <strong>Degree in Physics:</strong>
+                <br>2011-2016, Facultad de Ciencias, UNAM
+                <br>Thesis: Stellar orbital dynamics in galaxies with peculiar bars.
+                <br>Advisor: Dra. Bárbara Pichardo.
+            </li>
+        </ul>
 
-            <br> <strong>Achievements:</strong>
-            <ul>
-                <li>Conducted N-body simulations of dynamical friction in Milky Way-like galaxies.</li>
-                <li>Analyzed the impact of multiple infalling systems on the structure of the stellar halo MW.</li> 
-            </ul>
-        </li>
+        <hr/>
 
-        <br>
+        <h2>Work Experience</h2>
+        <ul>
+            <li>
+                <strong>2024-2025: Postdoctoral Researcher</strong>
+                <br>Instituto de Astronomía, UNAM
+                <ul>
+                    <li>Developing and optimizing simulations for large-scale astronomical systems.</li>
+                    <li>Applying machine learning algorithms for pattern detection in astrophysical data.</li>
+                </ul>
+            </li>
 
-        <li>
-            <strong>PhD in Astrophysics:</strong>  
-            <br> 2019-2024, Instituto de Astronomía, UNAM  
-            <br> Thesis: The Milky Way's halo: Collective effects in its dynamics and detecting substructure through the stellar halo.  
-            <br> Advisors: Dr. Octavio Valenzuela, Dr. Santi Roca-Fàbrega.  
+            <li>
+                <strong>2019-2024: Researcher in Simulations and Data Analysis</strong>
+                <br>Instituto de Astronomía, UNAM
+                <ul>
+                    <li>Algorithm development and data analysis in international projects such as DESI and LSST.</li>
+                    <li>Optimized data pipelines and applied machine learning techniques for pattern detection (DBSCAN, K-Means, Neural Networks).</li>
+                    <li>Developed and debugged code in Python, Julia, and C in high-performance environments.</li>
+                </ul>
+            </li>
 
-            <br> <strong>Achievements:</strong>
-            <ul>
-                <li>Developed a tool for synthetic observations of the Milky Way, incorporating error models from DESI, Gaia.</li>
-                <li>Applied machine learning techniques (DBSCAN, Self-Organizing Maps) to detect substructures in the stellar halo.</li>
-            </ul>
-        </li>
-    </ul>
+            <li>
+                <strong>2022-2025: Collaborator in DESI (Dark Energy Spectroscopic Instrument)</strong>
+                <ul>
+                    <li>Working on the analysis and interpretation of DESI data for cosmological studies.</li>
+                </ul>
+            </li>
 
-    <hr/>
+            <li>
+                <strong>2023-2025: Collaborator in LSST</strong>
+                <ul>
+                    <li>Contributing to the analysis of LSST data, focusing on the dynamics of the Milky Way's stellar halo.</li>
+                </ul>
+            </li>
+        </ul>
 
-    <h2>Work Experience</h2>
-    <ul>
-        <li>
-            <strong>2024-2025: Postdoctoral Experience</strong>  
-            <br> Instituto de Astronomía, UNAM  
-            <ul>
-                <li>Point 1</li>
-                <li>Point 2</li>
-            </ul>
-        </li>
+        <hr/>
 
-        <br>
+        <h2>Publications</h2>
+        <ul>
+            <li>1. Trelles, A., Valenzuela, O., Roca-Fábrega, S., Velázquez, H. <em><strong>Concurrent infall of satellites: Collective effects changing the overall picture</strong></em>, Astronomy & Astrophysics, Volume 668, A20, October 2022.</li>
+            <li>2. Aguilar-Argüello, Valenzuela, O., Clemente, J. C., Velázquez, H., and Trelles, J. A, <em><strong>Assessing the Hierarchical Hamiltonian Splitting Integrator for Collisionless N-body Simulations</strong></em>, Revista Mexicana de Astronomía y Astrofísica, Volume 58, pp. 197-213, October 2022.</li>
+            <li>3. Aguilar-Argüello, Valenzuela, O., Trelles, J. A, <em><strong>Boltzmann-Poisson-like approach to simulating the galactic halo response to satellite accretion: Dependence on the halo density profile</strong></em>, Astronomy & Astrophysics, Volume 663, A93, July 2022.</li>
+        </ul>
 
-        <li>
-            <strong>2022-2025: Member of Computing Commission</strong>  
-            <br> Instituto de Astronomía, UNAM (Students Coordination)  
-            <ul>
-                <li>Point 1</li>
-                <li>Point 2</li>
-            </ul>
-        </li>
+        <hr/>
 
-        <br>
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li><strong>Languages:</strong> Python, Java, JavaScript, C, Julia, Fortran</li>
+            <li><strong>Web Development:</strong> HTML, CSS, Node.js, Express, React</li>
+            <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
+            <li><strong>Data Processing:</strong> Pandas, NumPy, Matplotlib, SciPy</li>
+            <li><strong>Optimization/Parallelization:</strong> OpenMP, Multithreading with Julia</li>
+        </ul>
 
-        <li>
-            <strong>2019-2025: Collaborator in DESI (Dark Energy Survey Experiment)</strong>  
-            <ul>
-                <li>Point 1</li>
-                <li>Point 2</li>
-            </ul>
-        </li>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Adaptability and fast learning</li>
+            <li>Creative problem-solving for complex challenges</li>
+            <li>Effective communication and teamwork</li>
+        </ul>
 
-        <br>
-
-        <li>
-            <strong>2023-2025: Collaborator in LSST</strong>  
-            <ul>
-                <li>Point 1</li>
-                <li>Point 2</li>
-            </ul>
-        </li>
-    </ul>
-
-    <hr/>
-
-    <h2>Articles Published in Peer-Reviewed Journals</h2>
-    <ul>
-        <li>1. Trelles, A., Valenzuela, O., Roca-Fábrega, S., Velázquez, H. <em><strong>Concurrent infall of satellites: Collective effects changing the overall picture</strong></em>, Astronomy & Astrophysics, Volume 668, A20, October 2022.</li>
-        <li>2. Aguilar-Argüello, Valenzuela, O., Clemente, J. C., Velázquez, H., and Trelles, J. A, <em><strong>Assessing the Hierarchical Hamiltonian Splitting Integrator for Collisionless N-body Simulations</strong></em>, Revista Mexicana de Astronomía y Astrofísica, Volume 58, pp. 197-213, October 2022.</li>
-        <li>3. Aguilar-Argüello, Valenzuela, O., Trelles, J. A, <em><strong>Boltzmann-Poisson-like approach to simulating the galactic halo response to satellite accretion Dependence on the halo density profile</strong></em>, Astronomy & Astrophysics, Volume 663, A93, July 2022.</li>
-    </ul>
-
-   
-    <h2>Scientific Talks in Conferences and Seminars</h2>
-    <ul>
-        <li>1. <em>The Galaxy Halo: Collective Phenomena in its Dynamics and Substructure Detection through the Stellar Halo</em>, DAEC Seminar, Institute of Astronomy, UNAM, March 2024.</li>
-        <li>2. <em>Collective Effects and their Consequences for the Formation and Evolution History of Galaxies</em>, National Physics Congress, Mexican Society of Physics, October 2023.</li>
-        <li>3. <em>To a Constraining of the Milky Way Halo using DESI Mock Catalogs</em>, DESI Meeting, Cancun, Mexico, December 2022.</li>
-        <li>4. <em>The Concurrent Infall of Satellite Galaxies: Collective Effects Change Orbital History</em>, National Physics Congress, Zacatecas, Mexico, October 2022.</li>
-        <li>5. <em>To a Constraining of the Milky Way Halo using DESI Mock Catalogs</em>, DESI Meeting, Berkeley, June 2022.</li>
-        <li>6. <em>Dynamical Friction in Inhomogeneous Systems with Multiple Perturbers and its Consequences for the Structure of the Galaxy</em>, Institute of Astronomy, UNAM, Mexico, February 2019.</li>
-        <li>7. <em>Dynamical Friction in Inhomogeneous Systems with Multiple Perturbers and its Consequences for the Structure of the Galaxy</em>, Complutense University of Madrid, Spain, October 2019.</li>
-        <li>8. <em>Predicting Circular Velocity in a Sample of MaNGA Galaxies using Artificial Intelligence</em>, Machine Learning School, RIIA 2.0, Engineering Tower, UNAM, Mexico, April 2019.</li>
-    </ul>
-
-    <h2>Participation in Schools and Workshops</h2>
-    <ul>
-        <li>1. <em>DESI Meeting, Milky Way Survey Group Workshop</em>, Durham, June 2023.</li>
-        <li>2. <em>Latin American Gaia School - UdeA</em>, University of Antioquia, February 2022.</li>
-        <li>3. <em>Winter School - Quantum Computing</em>, National Autonomous University of Mexico, January 2022.</li>
-        <li>4. <em>Milky Way Size Galaxy Formation and High-Performance Computing</em>, University of Barcelona, January 2020.</li>
-        <li>5. <em>Summer School in Deep Learning, 2019</em>, Institute of Mathematics, Mexico, June 2019.</li>
-        <li>6. <em>International Meeting on Machine Learning and its Applications, RIIA 2.0</em>, Engineering Tower, UNAM, Mexico, April 2019.</li>
-        <li>7. <em>Second Mexican School on Cosmological Perturbations</em>, National Autonomous University of Mexico, June 2018.</li>
-        <li>8. <em>IV Workshop on Numerical and Statistical Methods in Cosmology</em>, National Autonomous University of Mexico, June 2018.</li>
-        <li>9. <em>Introduction to Quantum Computing with IBM</em>, Tecnológico de Monterrey, Mexico, June 2018.</li>
-        <li>10. <em>Workshop on Machine Learning by Dr. Sergei Gleyzer. Institute of Nuclear Sciences, UNAM, Mexico, April 2018</em></li>
-    </ul>
-
-    <h2>Computational Skills</h2>
-<ul>
-    <li><strong>Programming Languages:</strong> C, C++, Fortran, Python</li>
-    <li><strong>OPEN SKILL</li>
-    <li><strong>Machine Learning Tools:</strong> Knowledge of Machine Learning for classification and prediction tasks, and unsupervised learning techniques for cluster searching in databases. Proficient with tools such as <em>Scikit-Learn</em>, <em>Keras</em>, <em>TensorFlow</em>, and <em>PyTorch</em> for artificial intelligence.</li>
-    <li><strong>High-Performance Computing:</strong> Knowledge of parallel and distributed computing schemes like OpenMP and MPI. Understanding of the use and application of GPUs in astrophysics.</li>
-    <li><strong>Scientific Software:</strong> Experience with numerical simulation software in astrophysics: Gadget2, gyrfalcon, ART, RAMSES.</li>
-</ul>
-
-
-    <h3>
-        <a href="./public/about.html">About Me</a> &nbsp; | &nbsp;
-        <a href="./public/contact.html">Contact Me</a>
-    </h3>
+        <footer>
+            <p>© 2025 Arturo Trelles</p>
+        </footer>
+    </div>
 
 </body>
-
-
 </html>
